@@ -1,0 +1,32 @@
+# ── Credentials & local config (NEVER commit) ──────────────────
+# Copy config/db.example.php -> config/db.php and put your secrets there.
+config/db.php
+config/db - Copy.php
+config/db*.local.php
+.env
+.env.*
+
+# ── Uploaded files & user data (incident photos, etc.) ─────────
+uploads/*
+!uploads/.gitkeep
+
+# ── Database dumps / exports (may contain fleet data) ──────────
+*.sql
+!config/schema.sql
+
+# ── Logs & temporary files ────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.cache
+
+# ── Local tooling / editor / Claude settings ──────────────────
+.claude/
+.vscode/
+.idea/
+*.code-workspace
+
+# ── OS files ──────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
